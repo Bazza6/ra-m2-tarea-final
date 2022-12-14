@@ -1,4 +1,4 @@
 export const dimensions = {
-    borderRadius: 6,
+    borderRadius: '6px',
     padding: '1rem',
 }

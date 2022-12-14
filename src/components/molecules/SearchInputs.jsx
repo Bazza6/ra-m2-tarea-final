@@ -1,23 +1,25 @@
 import React from "react";
 import { FlexBox } from "../../styles";
-import { Button, Label, Input } from "../atoms";
-
-export const SearchInputs = ({
-  id1,
-  id2,
-  placeholder1,
-  placeholder2,
-  type1,
-  type2,
-  textButton,
-}) => {
+import { Button, Label, Input, Icon } from "../atoms";
+import search from "../../assets/icons/search.svg";
+export const SearchInputs = () => {
   return (
     <FlexBox direction="row">
-      <Label htmlFor={id1}>{id1}</Label>
-      <Input placeholder={placeholder1} id={id1} type={type1} />
-      <Label htmlFor={id2}>{id2}</Label>
-      <Input placeholder={placeholder2} id={id2} type={type2} />
-      <Button>{textButton}</Button>
+      <Label htmlFor="tipo-vivienda">tipo vivienda</Label>
+      <Input
+        placeholder="Busca un piso, chalet, garaje..."
+        id="tipo-vivienda"
+        type="text"
+      />
+      <Label htmlFor="lugar-vivienda">lugar vivienda</Label>
+      <Input
+        placeholder="Busca en Barcelona, Madrid, Quahog..."
+        id="lugar vivienda"
+        type="text"
+      />
+      <Button padding="0px 8px" color="red">
+        <Icon src={search} size="24" alt="search button"></Icon>
+      </Button>
     </FlexBox>
   );
 };

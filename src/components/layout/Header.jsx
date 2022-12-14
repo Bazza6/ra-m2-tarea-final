@@ -2,10 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { dimensions, FlexBox } from "../../styles";
 import Title from "../atoms/Title";
+import Icon from "../atoms/Icon";
+import IconRobot from "../../assets/icons/robot.svg";
+import Button from "../atoms/Button";
+import { Text } from "../atoms";
 
-//import IconRobot from "../../assets/icons/robot.svg";
 const HeaderStyled = styled(FlexBox)`
-  border: solid blue 1px;
+  //border: solid blue 1px;
   padding-left: ${dimensions.padding};
   padding-right: ${dimensions.padding};
 `;
@@ -13,11 +16,12 @@ const HeaderStyled = styled(FlexBox)`
 const UlStyle = styled.ul`
   display: flex;
   list-style: none;
+  //margin-left: 1rem;
 `;
 
-const LiStyle = styled.li`
-  border: solid red 1px;
+const LiStyle = styled(Text)`
   margin-left: 1rem;
+  cursor: pointer;
 `;
 
 function Header() {
@@ -27,11 +31,10 @@ function Header() {
         MIPISO.com
       </Title>
 
-      {/* <img src={"../../assets/icons/cat.svg"}></img> */}
       <UlStyle>
-        <LiStyle>Buscar</LiStyle>
-        <LiStyle>Datos</LiStyle>
-        <LiStyle>Mi Perfil</LiStyle>
+        <LiStyle as="li">Buscar</LiStyle>
+        <LiStyle as="li">Datos</LiStyle>
+        <LiStyle as="li">Mi Perfil</LiStyle>
       </UlStyle>
     </HeaderStyled>
   );

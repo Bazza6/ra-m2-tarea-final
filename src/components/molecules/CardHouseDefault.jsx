@@ -3,10 +3,10 @@ import { Card } from "./Card";
 import house from "../../assets/photos/house.jpg";
 import { FlexBox } from "../../styles";
 import styled from "styled-components";
+import { Button } from "../atoms";
 
 const ImgStyled = styled.img`
   border-radius: 5px;
-  //overflow: hidden;
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
@@ -23,8 +23,8 @@ export const CardHouseDefault = () => {
         align="baseline"
         padding="0.5rem"
       >
-        <span>98€</span>
-        <button>Localizar</button>
+        <span>98.000€</span>
+        <Button>Localizar</Button>
       </FlexBox>
     </Card>
   );

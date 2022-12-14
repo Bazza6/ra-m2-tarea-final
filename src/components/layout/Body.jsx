@@ -3,7 +3,6 @@ import Header from "./Header";
 import SubHeader from "./SubHeader";
 import { FlexBox } from "../../styles";
 import styled from "styled-components";
-import { Input } from "../atoms";
 
 const StyledBody = styled(FlexBox)`
   min-height: 100vh;

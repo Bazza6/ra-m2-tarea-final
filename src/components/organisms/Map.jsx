@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { dimensions } from "../../styles";
 
 const MapStyle = styled.div`
-  border: red solid 2px;
+  //border: red solid 2px;
   border-radius: 8px;
   min-width: 300px;
   margin: ${dimensions.padding};

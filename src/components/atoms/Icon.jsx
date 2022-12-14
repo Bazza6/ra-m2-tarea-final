@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Icon({ src, size, color }) {
-  return <img src={src} fill={color} width={size} height={size} />;
+export default function Icon({ src, size, alt }) {
+  return <img src={src} width={size} height={size} alt={alt} />;
 }
 
 //src={`require('./assets/icons/cat.svg')`}
