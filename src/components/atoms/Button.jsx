@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { colors } from '../../styles'
+import React from "react";
+import PropTypes from "prop-types";
+import { colors } from "../../styles";
 
 export default function Button({
   children,
@@ -8,14 +8,14 @@ export default function Button({
   onClick = () => {},
 }) {
   return (
-    <button type="button" onClick={onClick} style={{ backgroundColor: color }}>
+    <button type="button" onClick={onClick}>
       {children}
     </button>
-  )
+  );
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
   onClick: PropTypes.func,
-}
+};

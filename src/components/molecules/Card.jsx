@@ -4,12 +4,12 @@ import styled from "styled-components";
 import { colors, dimensions, FlexBox } from "../../styles";
 
 export const Card = styled(FlexBox)`
-  background: white;
-  border: solid red 2px;
-  box-shadow: 0px 3px 6px #00000029;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 3px 6px #00000020;
   //border: 1px solid ${colors.extraLightGrey};
   border-radius: ${dimensions.borderRadius}px;
-  padding: 1rem;
+  //padding: 1rem;
 `;
 
 // function Card({ children, className = "" }) {

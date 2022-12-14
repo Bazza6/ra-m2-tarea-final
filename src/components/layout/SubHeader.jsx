@@ -3,10 +3,8 @@ import styled from "styled-components";
 import { dimensions, FlexBox } from "../../styles";
 
 const SubHeaderStyled = styled(FlexBox)`
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  border: solid red 1px;
+  padding: ${({ padding }) => padding || dimensions.padding};
   height: 5rem;
   background-color: lightblue;
 `;

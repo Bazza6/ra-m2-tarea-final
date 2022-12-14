@@ -1,2 +1,2 @@
-export * from './CardList'
+export * from './Houses'
 export * from './Map'

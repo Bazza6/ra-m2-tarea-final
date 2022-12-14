@@ -1,2 +1,4 @@
 export * from './Card'
-export * from './CardHouse'
+export * from './CardHouseDefault'
+export * from './CardHouseFull'
+export * from './SearchInputs'

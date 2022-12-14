@@ -5,6 +5,7 @@ import Title from "../atoms/Title";
 
 //import IconRobot from "../../assets/icons/robot.svg";
 const HeaderStyled = styled(FlexBox)`
+  border: solid blue 1px;
   padding-left: ${dimensions.padding};
   padding-right: ${dimensions.padding};
 `;

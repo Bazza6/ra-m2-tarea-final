@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { dimensions } from "../../styles";
 
 const MapStyle = styled.div`
-  border: grey solid 4px;
+  border: red solid 2px;
   border-radius: 8px;
+  min-width: 300px;
   margin: ${dimensions.padding};
-  background-color: lightgrey;
+  background-color: #90acff;
   flex: 1;
   //text-align: center;
   // align-self: stretch;
