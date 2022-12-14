@@ -1,25 +1,39 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import React from "react";
+import styled from "styled-components";
+import { dimensions, FlexBox } from "../../styles";
+import Title from "../atoms/Title";
 
+//import IconRobot from "../../assets/icons/robot.svg";
 const HeaderStyled = styled(FlexBox)`
-  padding-left: 2rem;
-  padding-right: 2rem;
-`
+  padding-left: ${dimensions.padding};
+  padding-right: ${dimensions.padding};
+`;
+
+const UlStyle = styled.ul`
+  display: flex;
+  list-style: none;
+`;
+
+const LiStyle = styled.li`
+  border: solid red 1px;
+  margin-left: 1rem;
+`;
 
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
-      <div>
-        <ul>
-          <li>Buscador</li>
-          <li>Datos</li>
-          <li>Mi Perfil</li>
-        </ul>
-      </div>
+      <Title fontSize="24px" color="red">
+        MIPISO.com
+      </Title>
+
+      {/* <img src={"../../assets/icons/cat.svg"}></img> */}
+      <UlStyle>
+        <LiStyle>Buscar</LiStyle>
+        <LiStyle>Datos</LiStyle>
+        <LiStyle>Mi Perfil</LiStyle>
+      </UlStyle>
     </HeaderStyled>
-  )
+  );
 }
 
-export default Header
+export default Header;
