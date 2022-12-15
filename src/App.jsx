@@ -1,16 +1,10 @@
-import { Text } from "./components/atoms";
-import { Body } from "./components/layout";
-import { Home } from "./pages/Home";
+import { Home } from './pages/Home'
 
 function App() {
-  return (
-    <>
-      <Home />
-    </>
-  );
+  return <Home />
 }
 
-export default App;
+export default App
 
 // function App() {
 //   return (

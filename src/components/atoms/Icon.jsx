@@ -1,8 +1,11 @@
-import React from "react";
+import PropTypes from 'prop-types'
 
-export default function Icon({ src, size, alt }) {
-  return <img src={src} width={size} height={size} alt={alt} />;
+export const Icon = ({ src, size, alt }) => {
+  return <img src={src} width={size} height={size} alt={alt} />
 }
 
-//src={`require('./assets/icons/cat.svg')`}
-//alt={`${name} icon`}
+Icon.propTypes = {
+  src: PropTypes.string,
+  size: PropTypes.string,
+  alt: PropTypes.string,
+}

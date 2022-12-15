@@ -1,164 +1,33 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 const StyledButton = styled.button`
   text-align: center;
-  background: ${({ backgroundColor }) => backgroundColor || "#8077A3"};
-  color: ${({ color }) => color || "white"};
-  padding: ${({ padding }) => padding || "0.1rem 1.2rem"};
+  background: ${({ backgroundColor }) => backgroundColor || '#8077A3'};
+  color: ${({ color }) => color || 'white'};
+  padding: ${({ padding }) => padding || '0.1rem 1.2rem'};
   border-radius: 4px;
   border: none;
   cursor: pointer;
-`;
+`
 
-function Button({
-  children,
-  type = "button",
-  alt = "button",
+const Button = ({
+  type = 'button',
   onClick = () => {},
+  children,
   ...props
-}) {
+}) => {
   return (
-    <StyledButton type={type} onClick={onClick} alt={alt} {...props}>
+    <StyledButton type={type} onClick={onClick} {...props}>
       {children}
     </StyledButton>
-  );
+  )
 }
 
-export default styled(Button)``;
+Button.propTypes = {
+  type: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+}
 
-// Button.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   color: PropTypes.string,
-//   onClick: PropTypes.func,
-// };
-
-// import React from 'react'
-// import PropTypes from 'prop-types'
-// import styled from 'styled-components'
-// import { colors, font } from '../../theme'
-// import Icon from './Icon'
-// import Text from './Text'
-
-// const StyledButton = styled.button`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background: ${colors.redPink};
-//   border: 0;
-//   padding: 0.8rem 1rem;
-//   border-radius: 0.5rem;
-//   cursor: pointer;
-//   font-size: ${font.base};
-//   margin: 10px 0px;
-
-//   ${Text} {
-//     color: ${(props) => props.textColor || colors.white};
-//   }
-
-//   &:hover {
-//     filter: brightness(1.1);
-//   }
-
-//   &.blue-gradient {
-//     background: linear-gradient(90deg, ${colors.lightBlue}, ${colors.darkBlue});
-//   }
-//   &.blue-gradientWidth {
-//     background: linear-gradient(90deg, ${colors.lightBlue}, ${colors.darkBlue});
-//   }
-//   &.orange-gradient {
-//     background: linear-gradient(90deg, ${colors.lightOrange}, ${colors.darkOrange});
-//   }
-//   &.green-gradient {
-//     background: linear-gradient(90deg, ${colors.lightGreen}, ${colors.darkGreen});
-//   }
-//   &.transparent {
-//     background: transparent;
-//     color: ${colors.darkBlue};
-//   }
-//   &.darkRed {
-//     background: ${colors.extraDarkRed};
-//     padding: 0.8rem 1.5rem;
-//   }
-//   &.darkBlue {
-//     background: ${colors.extraDarkBlue};
-//     padding: 0.8rem 1.5rem;
-//   }
-//   &.disabled {
-//     cursor: not-allowed;
-//     opacity: 0.57;
-//   }
-//   &.animated {
-//     svg {
-//       animation: rotation 0.8s ease-in-out infinite;
-//     }
-//   }
-//   @keyframes rotation {
-//     from {
-//       transform: rotate(0deg);
-//     }
-//     to {
-//       transform: rotate(360deg);
-//     }
-//   }
-// `
-
-// function Button({
-//   type = 'submit',
-//   text,
-//   textColor = 'white',
-//   loadingText,
-//   isLoading,
-//   disabled,
-//   icon,
-//   iconPosition,
-//   className,
-//   buttonStyles,
-//   textStyles,
-//   iconStyles,
-//   animated,
-//   onClick,
-//   ...props
-// }) {
-//   return (
-//     <StyledButton
-//       type={type}
-//       disabled={disabled}
-//       className={`${className} ${animated ? 'animated' : ''} ${disabled ? 'disabled' : ''}`}
-//       style={{ ...buttonStyles }}
-//       onClick={onClick}
-//       textColor={textColor}
-//       {...props}
-//     >
-//       {iconPosition === 'left' &&
-//         (!isLoading && icon ? (
-//           <Icon color={textColor} name={icon} mr="0.5rem" style={{ ...iconStyles }} />
-//         ) : null)}
-//       <Text as="span" text={isLoading ? loadingText : text} style={{ ...textStyles }} />
-//       {iconPosition === 'right' &&
-//         (!isLoading && icon ? (
-//           <Icon color={textColor} name={icon} ml="0.5rem" style={{ ...iconStyles }} />
-//         ) : null)}
-//     </StyledButton>
-//   )
-// }
-
-// Button.propTypes = {
-//   type: PropTypes.string,
-//   text: PropTypes.string,
-//   textColor: PropTypes.string,
-//   loadingText: PropTypes.string,
-//   isLoading: PropTypes.bool,
-//   iconPosition: PropTypes.string,
-//   className: PropTypes.string,
-//   icon: PropTypes.string,
-//   buttonStyles: PropTypes.object,
-//   textStyles: PropTypes.object,
-//   iconStyles: PropTypes.object,
-//   animated: PropTypes.bool,
-//   disabled: PropTypes.bool,
-//   onClick: PropTypes.func,
-// }
-
-// export default styled(Button)``
+export default styled(Button)``
