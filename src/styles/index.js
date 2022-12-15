@@ -1,5 +1,5 @@
 export * from './colors'
 export * from './textDimensions'
 export * from './dimensions'
-export { default as FlexBox } from './FlexBox'
-export { default as Grid } from './Grid'
+export * from './FlexBox'
+export * from './Grid'

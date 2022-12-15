@@ -1,14 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Grid } from "../../styles";
-import { CardHouseDefault, CardHouseFull } from "../molecules";
+import styled from 'styled-components'
+import { Grid } from '../../styles'
+import { CardHouseDefault, CardHouseFull } from '../molecules'
 
 const HousesStyled = styled(Grid)`
-  min-width: 750px;
-  max-width: 850px;
+  min-width: 700px;
   flex: 1;
   padding: 1rem;
-`;
+`
 
 export const Houses = () => {
   return (
@@ -23,5 +21,5 @@ export const Houses = () => {
       <CardHouseDefault />
       <CardHouseDefault />
     </HousesStyled>
-  );
-};
+  )
+}
