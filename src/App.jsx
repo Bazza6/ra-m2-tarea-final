@@ -1,23 +1,13 @@
-import { Home } from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
+import { Home, Datos, Buscar, MiPerfil } from './pages'
 
-function App() {
-  return <Home />
+export default function App() {
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='datos' element={<Datos />} />
+      <Route path='buscar' element={<Buscar />} />
+      <Route path='mi-perfil' element={<MiPerfil />} />
+    </Routes>
+  )
 }
-
-export default App
-
-// function App() {
-//   return (
-//     <Body>
-//       <Text as="h1">Hola a todos</Text>
-//       <Text>Buenas tardes</Text>
-//       <ul>
-//         <Text as="li">A</Text>
-//         <Text as="li">B</Text>
-//         <Text as="li">C</Text>
-//       </ul>
-//     </Body>
-//   )
-// }
-
-// export default App

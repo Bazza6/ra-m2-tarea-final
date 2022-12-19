@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { dimensions } from '../../styles'
-import Title from './Title'
+import { Title } from './Title'
 
 const MapStyle = styled.div`
   border-radius: 8px;
@@ -16,7 +16,9 @@ const MapStyle = styled.div`
 export const Map = () => {
   return (
     <MapStyle>
-      <Title level='4'>mapa</Title>
+      <Title as='h4' fontSize='20px'>
+        mapa
+      </Title>
     </MapStyle>
   )
 }

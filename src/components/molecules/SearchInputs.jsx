@@ -1,6 +1,5 @@
 import { FlexBox } from '../../styles'
 import { Button, Label, Input, Icon } from '../atoms'
-import search from '../../assets/icons/search.svg'
 
 export const SearchInputs = () => {
   return (
@@ -18,7 +17,7 @@ export const SearchInputs = () => {
         type='text'
       />
       <Button padding='0px 8px' backgroundColor='#0066ff'>
-        <Icon src={search} size='24' alt='search button' />
+        <Icon name='search' />
       </Button>
     </FlexBox>
   )

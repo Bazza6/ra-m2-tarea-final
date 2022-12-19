@@ -24,7 +24,7 @@ export const CardHouseFull = () => {
   return (
     <Card>
       <TextContainer>
-        <ImgStyled src={house} />
+        <ImgStyled src={house} alt='imagen de la casa' />
         <OverText color='white'>Piso en Barcelona...</OverText>
       </TextContainer>
     </Card>

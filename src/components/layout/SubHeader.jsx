@@ -8,13 +8,13 @@ const SubHeaderStyled = styled(FlexBox)`
   background-color: lightblue;
 `
 
-const SubHeader = ({ children }) => {
+const SubHeader = ({ children, ...props }) => {
   return (
     <SubHeaderStyled
       direction='row'
       justify='flex-start'
       align='center'
-      paddingLeft={dimensions.padding}
+      {...props}
     >
       {children}
     </SubHeaderStyled>
