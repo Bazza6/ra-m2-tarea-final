@@ -8,6 +8,7 @@ const StyledHeading = styled.h1`
   font-weight: ${({ fontWeight }) => fontWeight || 'bold'};
 `
 
+// Lo intentaria refactorizar como un styled-component unicamente
 const Title = ({ level = 1, ...props }) => {
   return (
     <StyledHeading
