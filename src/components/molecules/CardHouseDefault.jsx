@@ -14,7 +14,7 @@ const ImgStyled = styled.img`
 export const CardHouseDefault = () => {
   return (
     <Card>
-      <ImgStyled src={house} />
+      <ImgStyled src={house} alt='imagen de la casa' />
       <FlexBox padding='0.5rem'>
         <Text as='span'>Piso en Barcelona...</Text>
       </FlexBox>

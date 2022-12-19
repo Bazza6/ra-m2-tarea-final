@@ -11,7 +11,6 @@ const InputStyled = styled.input`
   border: solid grey 1px;
   box-shadow: 0px 3px 6px #00000020;
 `
-
 function Input({ id, placeholder, type, ...props }) {
   return (
     <InputStyled
@@ -27,7 +26,7 @@ function Input({ id, placeholder, type, ...props }) {
 Input.propTypes = {
   id: PropTypes.string,
   placeholder: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.string.isRequired,
 }
 
 export default styled(Input)``
