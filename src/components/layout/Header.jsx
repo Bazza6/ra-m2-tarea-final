@@ -24,6 +24,7 @@ function Header() {
       <Title fontSize='24px' color='red' fontWeight='normal'>
         MIPISO.com
       </Title>
+      {/* Crea una molecula de menu que permita renderizar URLS + LABELS desde las cosntantes en donde se definan los menús */}
       <UlStyle>
         <LiStyle as='li'>Buscar</LiStyle>
         <LiStyle as='li'>Datos</LiStyle>

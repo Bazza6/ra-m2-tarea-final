@@ -14,6 +14,7 @@ const SubHeader = ({ children }) => {
       direction='row'
       justify='flex-start'
       align='center'
+      //   No veo esta prop en el styled-component
       paddingLeft={dimensions.padding}
     >
       {children}

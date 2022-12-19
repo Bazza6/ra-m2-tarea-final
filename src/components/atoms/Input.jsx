@@ -12,6 +12,7 @@ const InputStyled = styled.input`
   box-shadow: 0px 3px 6px #00000020;
 `
 
+// El type debería ir definido en los props. Existe una gran diferencia entre number, color y text, por ejemplo.
 function Input({ id, placeholder, type, ...props }) {
   return (
     <InputStyled
