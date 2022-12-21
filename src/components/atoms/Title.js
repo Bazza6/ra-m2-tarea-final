@@ -1,8 +1,12 @@
+import { createElement } from 'react'
 import styled from 'styled-components'
 import { colors, textDimensions } from '../../styles'
 
-export const Title = styled.h1`
+const e = createElement
+export const Title = styled(({ tag = 'h1', children, ...props }) =>
+  e(tag, props, children),
+)`
   color: ${({ color }) => color || colors.font.headings};
-  font-size: ${({ fontSize }) => fontSize || textDimensions.font.h1};
   font-weight: ${({ fontWeight }) => fontWeight || 'normal'};
+  font-size: ${({ fontSize, tag }) => fontSize || textDimensions.font[`${tag}`]};
 `

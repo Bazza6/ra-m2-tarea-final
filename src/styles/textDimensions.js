@@ -7,12 +7,12 @@ export const textDimensions = {
   xxl: "32px",
   font: {
     base: "16px",
-    h1: "52px",
-    h2: "40px",
-    h3: "32px",
-    h4: "24px",
-    h5: "20px",
-    h6: "18px",
+    h1: "24px",
+    h2: "20px",
+    h3: "18px",
+    h4: "17px",
+    h5: "16px",
+    h6: "15x",
   },
 };
 

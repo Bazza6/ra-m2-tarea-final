@@ -16,7 +16,7 @@ function Header() {
   return (
     <HeaderStyled direction='row' justify='space-between' align='baseline'>
       <LinkStyled to='/'>
-        <Title fontSize='24px' color='red'>
+        <Title tag='h1' color='red'>
           MIPISO.com
         </Title>
       </LinkStyled>

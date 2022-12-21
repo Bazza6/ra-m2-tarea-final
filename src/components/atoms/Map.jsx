@@ -16,9 +16,7 @@ const MapStyle = styled.div`
 export const Map = () => {
   return (
     <MapStyle>
-      <Title as='h4' fontSize='20px'>
-        mapa
-      </Title>
+      <Title tag='h3'>mapa</Title>
     </MapStyle>
   )
 }
